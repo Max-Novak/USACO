@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1546203990 source:c:\users\^water_bear\desktop\githubprojects\usaco\usaco-master\usaco\main.cpp
+	<fstream>
+	<iostream>
+
