@@ -6,6 +6,7 @@ LANG: C++
 
 #include <fstream>//file stream
 #include <iostream>//input output stream
+#include<string>
 
 using namespace std;
 
