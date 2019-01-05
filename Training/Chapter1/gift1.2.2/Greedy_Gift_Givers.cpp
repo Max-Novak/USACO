@@ -19,8 +19,6 @@ TODO:
     /*
     dave    laura
     init
-
-
 Notes:
 	-I learn how to use vectors here
     -i think doing all the input and output stuff in main and calling functions ofr the logic is the best
@@ -36,12 +34,20 @@ struct Person
 void calcMoney(ifstream &infile, vector<Person> &users)
 {
     string giver;
-    int deposit, total, give_each, keep;
+    int deposit, total = 0, give_each, keep;
     infile >> giver;
     infile >> deposit;
     infile >> total;
-    give_each = deposit/total;
-    keep = deposit % total;
+    if(total == 0)
+    {
+        give_each = deposit;
+    }
+    else
+    {
+        give_each = deposit / total;
+        keep = deposit % total;
+    }
+
 
     for(int z = 0; z < users.size(); z++)
     {
@@ -71,14 +77,16 @@ int main()
 
     infile >> numPeople;
 
-    vector<Person> users(numPeople);
-    for(int i; i < numPeople; i++)
+    //vector<Person> users(numPeople);
+    vector<Person> users;
+    for(int i = 0; i < numPeople; i++)
     {
         users.push_back(Person());
         infile >> users[i].name;
         users[i].bal = 0;
     }
-
+	int x = users.size();
+    printf("%d", x);
     //while(!infile.eof())
     for(int y = 0; y < numPeople; y++)
     {
