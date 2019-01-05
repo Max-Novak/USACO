@@ -40,7 +40,8 @@ void calcMoney(ifstream &infile, vector<Person> &users)
     infile >> total;
     if(total == 0)
     {
-        give_each = deposit;
+        give_each = 0;
+		keep = 0;
     }
     else
     {
