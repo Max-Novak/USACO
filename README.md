@@ -11,7 +11,17 @@ USACO COMP:
 Username: pnappyyy
 Password: OrangeMango20
 
-<b>Follow quora links and make spreadsheet</b>
+<b>Important Notes</b>
+<b>I wrestled with alligators, killed a rock, got into bed before the light went off. The man is in trouble</b>
+  <ul>
+    <li>Break Practices Into Bite Size Month Practices</li>
+  <li>1) 1 USACO everyday until i get stumped</li>
+  <li>Competitive Programming 3 until the end</li>
+  <li>Maybe start with the indian guy's beginner to pro 1-100 book</li>
+  <li>Once i have read the books and understand the game then begin the codeforces, codechef +++</li>
+  <b>Make sure to find problems that are not too hard and not too easy, I need to always feel lost</b>
+  <li>Always use C++</li>
+ </ul
 <p>https://www.quora.com/What-are-some-good-books-for-competitive-programming</p>
 Training Sites:
 geeksforgeeks --> has algorithms and c++ knowledge
