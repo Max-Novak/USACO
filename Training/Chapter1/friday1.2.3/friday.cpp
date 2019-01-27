@@ -6,6 +6,10 @@ LANG: C++
 
 #include <fstream>//file stream
 #include <iostream>//input output stream
+<<<<<<< HEAD
+=======
+#include <string>
+>>>>>>> ad3a01ad330cc9a3ca97ec7f23bc178a38eaf101
 
 using namespace std;
 
@@ -28,6 +32,7 @@ int main()
     int years;
     infile.open("friday.in");
     infile >> years;
+<<<<<<< HEAD
     int output[7] = {0};
     int weekCounter = 0;//should always been changing with all scopes
     int yearCount = 1900, month, day;
@@ -35,6 +40,15 @@ int main()
     years = yearCount + years;
 
     while(yearCount != years-1)
+=======
+    int output[7] = {0};//monday is 0 sunday is 6
+    int weekCounter = 0;//should always been changing with all scopes
+    int yearCount = 1900, day;
+    int leapFlag;
+    years = yearCount + years;
+
+    while(yearCount != years)
+>>>>>>> ad3a01ad330cc9a3ca97ec7f23bc178a38eaf101
     {
         if(yearCount % 100 == 0 && yearCount % 400 == 0)
             leapFlag = 1;
@@ -42,10 +56,15 @@ int main()
             leapFlag = 1;
         else
             leapFlag = 0;
+<<<<<<< HEAD
         
         month = 1;
         
         for(int months = 1; months <= 12; months++)
+=======
+
+        for(int month = 1; month <= 12; month++)
+>>>>>>> ad3a01ad330cc9a3ca97ec7f23bc178a38eaf101
         {
             //contraint tree to determine day in a month
             if(month == 4 || month == 9 || month == 11 || month == 6)
@@ -60,12 +79,25 @@ int main()
             for(int days = 1; days <= day; days++)
             {
                 if(weekCounter >= 7)
+<<<<<<< HEAD
                         weekCounter = 0;
                 if(days == 13)
                     output[weekCounter] += 1;
                     //printf("%d-", output[weekCounter]);
                     
                 
+=======
+                    weekCounter = 0;
+                if(days == 13)
+                {
+                    printf("%d-", output[weekCounter]);
+                    output[weekCounter] += 1;
+                    /*
+                    3month should be tues but is fri
+                    */
+                }
+
+>>>>>>> ad3a01ad330cc9a3ca97ec7f23bc178a38eaf101
                 weekCounter++;
             }
         }
@@ -76,6 +108,7 @@ int main()
     infile.close();
     outfile.open ("friday.out");
 
+<<<<<<< HEAD
     for(int x = 0; x < 7; x++)
     {
         printf("\n%d\n", output[x]);
@@ -84,3 +117,34 @@ int main()
 
     return 0;
 }
+=======
+    /*
+    THE OUPUT WAS ORDERED DIFFERENTLY THAN WHAT USACO WANTS, SO I REWIRED THE WEEKDAYS
+    */
+    int reformedOutput[7];
+    reformedOutput[0] = output[5];
+    reformedOutput[1] = output[6];
+    reformedOutput[2] = output[0];
+    reformedOutput[3] = output[1];
+    reformedOutput[4] = output[2];
+    reformedOutput[5] = output[3];
+    reformedOutput[6] = output[4];
+
+    for(int x = 0; x < 7; x++)
+    {
+        if(x < 6)
+            outfile << reformedOutput[x] << " ";
+        else
+            outfile << reformedOutput[x] << "\n";
+    }
+
+
+    return 0;
+}
+/*
+WHAT I LEARNED:
+    -ALOT OF COMPUTATIONS ARE DIFFCULT TO DEBUG
+    -MAKE SURE YOUR VARIABLE NAMES MAKE SENSE
+    -LOOK AT OUTPUTS WITH DIFFERENT PERSPECTIVIES
+    */
+>>>>>>> ad3a01ad330cc9a3ca97ec7f23bc178a38eaf101

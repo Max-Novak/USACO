@@ -6,6 +6,10 @@ LANG: C++
 
 #include <fstream>//file stream
 #include <iostream>//input output stream
+<<<<<<< HEAD
+=======
+#include<string>
+>>>>>>> ad3a01ad330cc9a3ca97ec7f23bc178a38eaf101
 
 using namespace std;
 
