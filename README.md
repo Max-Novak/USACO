@@ -10,8 +10,6 @@ Password: 99y9bfy
 USACO COMP:
 Username: pnappyyy
 Password: OrangeMango20
-<<<<<<< HEAD
-=======
 
 <b>Important Notes</b>
 <b>I wrestled with alligators, killed a rock, got into bed before the light went off. The man is in trouble</b>
@@ -33,4 +31,3 @@ C Programming: Beginner to Expert in 100 questions by Ansh Narad <-- Intro book
 Programming in C by E.Balagurusamy <--mid level book
 <p>https://www.spoj.com/problems/classical/sort=6</p>
 
->>>>>>> ad3a01ad330cc9a3ca97ec7f23bc178a38eaf101
