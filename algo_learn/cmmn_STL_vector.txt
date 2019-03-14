@@ -1,0 +1,20 @@
+Vector algorithms builtin to STL
+#include <vector>
+#include <algorithm>
+#include <iostream>
+
+sort(first_iterator, last_iterator)
+reverse(first_iterator, last_iterator) 
+*max_element (first_iterator, last_iterator)
+*min_element (first_iterator, last_iterator)
+accumulate(first_iterator, last_iterator, initial value of sum)
+count(first_iterator, last_iterator,x)
+find(first_iterator, last_iterator, x)
+binary_search(first_iterator, last_iterator, x)
+lower_bound(first_iterator, last_iterator, x)
+upper_bound(first_iterator, last_iterator, x)
+arr.erase(position to be deleted)
+arr.erase(unique(arr.begin(),arr.end()),arr.end())
+next_permutation(first_iterator, last_iterator) 
+prev_permutation(first_iterator, last_iterator)
+distance(first_iterator,desired_position)
